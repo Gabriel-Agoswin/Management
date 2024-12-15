@@ -78,12 +78,16 @@ switch ($method) {
       if($result){
         $response = ['status' =>1, 'message'=> 'Record Updated Successifully'];
 
+        echo "Record Updated Successifully";
+
 
       }else{
         $response = ['status' => 0, 'message' => 'Failed to Update record'];
       }
 
         echo json_encode($response);
+
+        echo "Failed to Update record";
 
         //echo $response;
       
@@ -94,7 +98,7 @@ switch ($method) {
           $sql = "DELETE FROM users WHERE id =:id";
       //echo  $_SERVER['REQUEST_URI']; exit;
 
-      $path= explode('/', $_SERVER['REQUEST_URI']); 
+      $path = explode('/', $_SERVER['REQUEST_URI']); 
 
         
         $stmt= $conn->prepare($sql);

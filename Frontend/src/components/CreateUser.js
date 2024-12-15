@@ -26,18 +26,18 @@ export default function CreateUser(){
         
     }
     return(
-        <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 ">
+        <div className="flex min-h-full flex-col justify-center px-6 py-12  ">
            <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-           <h2 className="mt-10 text-center text-2xl/9  font-medium tracking-tight text-gray-700">Create a new User</h2>
+           <h2 className="mt-10 text-center text-2xl/9  font-medium tracking-tight text-gray-400">Create a new User</h2>
             <form onSubmit = {handleSubmit} >
-              <label for="email" className="block text-left text-sm/6 font-medium text-gray-600">Full name</label>
-              <input type="text" placeholder="Enter your name" className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" name="name" onChange={handleChange}/>
+              <label for="email" className="block text-left text-sm/6 font-medium text-gray-400">Full name</label>
+              <input type="text" placeholder="Enter your name" className="block bg-gray-700 w-full rounded-md  px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-600 placeholder:text-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gray-600 sm:text-sm/6 dark:bg-slate-100 focus:outline-gray-200 placeholder:text-gray-500" name="name" onChange={handleChange}/>
               <br/>
-              <label for="email"  className="block text-left text-sm/6 font-medium text-gray-600">Email address</label>
-              <input type="text" placeholder="Enter your email address" className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" name="email" onChange={handleChange}/>
+              <label for="email"  className="block text-left text-sm/6 font-medium text-gray-400">Email address</label>
+              <input type="text" placeholder="Enter your email address" className="block w-full rounded-md bg-gray-700 px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-600 placeholder:text-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gray-600 sm:text-sm/6 dark:bg-slate-100 focus:outline-gray-200  placeholder:text-gray-500" name="email" onChange={handleChange}/>
               <br/>
-              <label for="email"  className="block text-left text-sm/6 font-medium text-gray-600">Mobile number</label>
-              <input type="text" placeholder="Enter your mobile number" className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"  name="mobile" onChange={handleChange}/>
+              <label for="email"  className="block text-left text-sm/6 font-medium text-gray-400">Mobile number</label>
+              <input type="text" placeholder="Enter your mobile number" className="block w-full rounded-md bg-gray-700 px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-600 placeholder:text-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gray-600  sm:text-sm/6 dark:bg-slate-100 focus:outline-gray-200 placeholder:text-gray-500"  name="mobile" onChange={handleChange}/>
               <br/>
 
               

@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+*{
+  @apply transition-colors duration-500
+}
+
 @layer base {
     @font-face {
       font-family: 'Century Gothic';
@@ -10,4 +15,10 @@
       font-display: swap;
       src: url(../public/fonts/centurygothic.ttf) format('ttf');
     }
+
+
+
+    
+
 }
+
